@@ -18,7 +18,17 @@
   </code>
 </pre>
 
-> License agreement requires your agreement. Enter 'y' to agree. To use conda easily, register path of anaconda in your bashrc.
+> License agreement requires your agreement. Enter 'y' to agree. Then to use conda easily, enter 'yes' to register path of anaconda in your bashrc.
+
+Then enter below code for refreshing bachrc,
+
+<pre>
+  <code>
+    (your shell) source ~/.bashrc
+  </code>
+</pre>
+
+
 
 ## Check anaconda installed.
 

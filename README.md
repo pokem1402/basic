@@ -4,8 +4,8 @@
 
 <pre>
   <code>
-    (your shell) wget (file link)
-    [example] pokem1402@~:~/Downloads$ wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+(your shell) wget (file link)
+[example] pokem1402@~:~/Downloads$ wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
   </code>
 </pre>
 
@@ -13,8 +13,8 @@
 
 <pre>
   <code>
-    (your shell) bash (file path)/(file_name).sh
-    [example] pokem1402@~:~/Downloads$ bash Anaconda3-5.2.0-Linux-x86_64.sh
+(your shell) bash (file path)/(file_name).sh
+[example] pokem1402@~:~/Downloads$ bash Anaconda3-5.2.0-Linux-x86_64.sh
   </code>
 </pre>
 
@@ -24,7 +24,7 @@ Then enter below code for refreshing bachrc,
 
 <pre>
   <code>
-    (your shell) source ~/.bashrc
+(your shell) source ~/.bashrc
   </code>
 </pre>
 
@@ -36,8 +36,8 @@ Then enter below code for refreshing bachrc,
 
 <pre>
   <code>
-    (your shell) conda
-    [example] pokem1402@~:~/Downloads$ conda
+(your shell) conda
+[example] pokem1402@~:~/Downloads$ conda
   </code>
 </pre>
 
@@ -47,8 +47,8 @@ Then enter below code for refreshing bachrc,
 
 <pre>
   <code>
-    (your shell) conda create -n (env name) python=(desired python version)
-    [example] pokem1402@~:~/Download$ conda create -n my_env python=3.6
+(your shell) conda create -n (env name) python=(desired python version)
+[example] pokem1402@~:~/Download$ conda create -n my_env python=3.6
   </code>
 </pre>
 
@@ -58,8 +58,8 @@ Then enter below code for refreshing bachrc,
 
 <pre>
   <code>
-    (your shell) source activate (env name)
-    [example] pokem1402@~:~/Download$ source activate my_env
+(your shell) source activate (env name)
+[example] pokem1402@~:~/Download$ source activate my_env
   </code>
 </pre>
 
@@ -70,7 +70,7 @@ Then enter below code for refreshing bachrc,
 
 <pre>
   <code>
-    (your shell) jupyter notebook --generate-config
+(your shell) jupyter notebook --generate-config
   </code>
 </pre>
 
@@ -78,15 +78,15 @@ add below code to /home/(user_name)/.jupyter/jupyter_notebook_config.py
 
 <pre>
   <code>
-      c = get_config()
-      c.IPkernelApp.pylab = 'inline'
+c = get_config()
+c.IPkernelApp.pylab = 'inline'
 
-      c.NotebookApp.ip = '0.0.0.0'
-      c.NotebookApp.open_browser = False
-      c.NotebookApp.port = 9122
+c.NotebookApp.ip = '0.0.0.0'
+c.NotebookApp.open_browser = False
+c.NotebookApp.port = 9122
 
-      from IPython.lib import passwd
-      password = passwd("<password>") # <- insert your own password
-      c.NotebookApp.password = password
+from IPython.lib import passwd
+password = passwd("<password>") # <- insert your own password
+c.NotebookApp.password = password
   </code>
 </pre>

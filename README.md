@@ -83,7 +83,7 @@ c.IPkernelApp.pylab = 'inline'
 
 c.NotebookApp.ip = '0.0.0.0'
 c.NotebookApp.open_browser = False
-c.NotebookApp.port = 9122
+c.NotebookApp.port = <your port>
 
 from IPython.lib import passwd
 password = passwd("<password>") # <- insert your own password

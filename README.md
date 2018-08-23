@@ -64,3 +64,29 @@ Then enter below code for refreshing bachrc,
 </pre>
 
 > Then 
+
+
+# Setting Remote jupyter notebook
+
+<pre>
+  <code>
+    (your shell) jupyter notebook --generate-config
+  </code>
+</pre>
+
+add below code to /home/(user_name)/.jupyter/jupyter_notebook_config.py
+
+<pre>
+  <code>
+      c = get_config()
+      c.IPkernelApp.pylab = 'inline'
+
+      c.NotebookApp.ip = '0.0.0.0'
+      c.NotebookApp.open_browser = False
+      c.NotebookApp.port = 9122
+
+      from IPython.lib import passwd
+      password = passwd("<password>") # <- insert your own password
+      c.NotebookApp.password = password
+  </code>
+</pre>
